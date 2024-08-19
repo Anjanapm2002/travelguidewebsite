@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tourguide</title>
+    <!-- GoogleFont CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <div class="head">
+        <nav class="navbar navbar-expand-lg .bg-transparent">
+          <div class="container-fluid">
+            <div class="logo">Travel<span style="font-size: x-large;">Guide</span></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-5 ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3">
+  
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Packages
+                </a>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Transport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color: white;" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color: white;" href="#">Support</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      <!-- overlay content -->
+      <div class="overlay">
+        <div style="margin-top: 390px; width: 160px;">
+          <button
+          style="border-radius: 5px; font-size: 18px; "
+          class="enquiry-button"
+          data-bs-toggle="modal"
+          data-bs-target="#enquiryModal"
+          
+        >
+          ENQUIRY
+        </button>
+        </div>
+        <div class="content " >
+          <h1  style="font-weight: 800;">Travel</h1>
+          <h2 style="font-weight: 800;">far enough,</h2>
+          <h1 style="font-weight: 800;">You meet</h1>
+          <h2 style="font-weight: 800;">yourself</h2>
+          
+          
+        </div>
+      </div>
+    </header>
+    
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enquiryModal"
+      tabindex="-1"
+      aria-labelledby="enquiryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enquiryModalLabel">
+              Enter Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div><br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Honeymoon packages section -->
+    <section id="hero">
+      <div class="container">
+        <h2 class="text-center mt-5 mb-5">HONEYMOON PACKAGES</h2>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="./images/cardimg-1.jpg"
+                    alt="kerala honeymoon"
+                  />
+                  <h2>Kerala Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    Enchanting yet thought provoking, the backwater of Kerala makes a perfect sight to spend a leisurely honeymoon.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="./images/carimg-4.jpg"
+                    alt="goa honeymoon"
+                  />
+                  <h2>Goa Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    No city in India screams ‘party’ the way Goa does! Take your partner on a romantic holiday to this golden land of the sun, sand, and sea and make your bond last forever
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="./images/carimg-2.jpg"
+                    alt="Maldives honeymoon"
+                  />
+                  <h2>Maldives Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    When it comes to romantic getaways, there are few experiences that can beat a Maldives honeymoon.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="./images/cardimg-3.jpeg"
+                    alt="Manali honeymoon"
+                  />
+                  <h2>Manali Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    Manali is a popular honeymoon destination for many reasons, including: Manali is located in the foothills of the Himalayas.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+        </div>
+        <button class="more-packages "> More Packages</button>
+    </section>
+<hr>
+  <!-- Carousel -->
+    <section class="container my-5 mb-5">
+      <h2 class="text-center mb-4">SPECIAL KERALA FESTIVAL TOURS</h2>
+      
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- Carousel inner part -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/sp1.webp"
+              class="d-block w-100 carousel-img"
+              alt="Onam Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="move">VALLAMKALI</h2>
+              <p>
+                Vallamkali, or the snake boat race, is a traditional Kerala sport where teams row long boats in a spirited competition during the Onam festival, showcasing the region's cultural heritage and teamwork.
+              </p>
+              <button style="background-color:rgb(0, 217, 255); border-radius: 5px; width: 120px; height: 40px;">More Details</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/sp02.jpg"
+              class="d-block w-100 carousel-img"
+              alt="Kerala Boat Race"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="move">KATHAKALI</h2>
+              <p>
+                Kathakali is a classical dance-drama from Kerala, known for its elaborate costumes, intricate makeup, and expressive gestures. It combines dance, music, and acting to depict stories from Hindu epics like the Mahabharata and Ramayana.
+              </p>
+              <button style="background-color:rgb(0, 217, 255); border-radius: 5px; width: 120px; height: 40px;">More Details</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img
+              src="/images/sp3.jpg"
+              class="d-block w-100 carousel-img"
+              alt="Kerala Boat Race"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="move">THRISSUR POORAM</h2>
+              <p>
+                Thrissur Pooram is a grand and vibrant temple festival held annually in Thrissur, Kerala, featuring a magnificent display of decorated elephants, traditional music, and fireworks. It is celebrated at the Vadakkunnathan Temple, attracting thousands of devotees and tourists from around the world.
+              </p>
+              <button style="background-color:rgb(0, 217, 255); border-radius: 5px; width: 120px; height: 40px;">More Details</button>
+          </div>
+        </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr>
+      
+      <div class="mb-5"></div>
+      <!-- vid & gridimg section -->
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <iframe width="658" height="400"  src="https://www.youtube.com/embed/S5yeHOXD0MA" title="Mohiniyattam | #CatchTheRhythm | Kerala 365 | Kerala Tourism" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-md-6 w-25 h-50">
+           <div class="grid ">
+              <div class="cola"></div>
+              <div class="colb"></div>
+              <div class="colc"></div>
+              <div class="cold"></div>
+              <div class="cole"></div>
+              <div class="colf"></div>
+              <div class="colg"></div>
+              <div class="coli"></div>
+              <div class="colh"></div>
+            </div>
+           </div>
+      </div>
+    </section>
+<hr>
+    <!--  North India tours-->
+    <div class="four">
+      <h1 class="north text-center">NORTH INDIAN TOURS</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 25rem;">
+          <img width="300px" height="300px" src="./images/nor1.jpg" class="card-img-top" alt="...">
+          <div class="content">
+            <h1 style="font-size: 30px; font-weight: 600; color: white;">VARANASI</h1>
+            <p style="font-size: 30px; font-weight: 700;">Rs: <span style="color: rgb(9, 9, 141)">24,000/person</span></p>
+            <a href="#" style="background-color: rgb(201, 26, 26); color: white; border-radius: 30px; text-decoration: none; padding: 10px 10px;">BOOK NOW</a>
+          </div>
+          </div>
+        </div>
+       <div class="col">
+          <div class="card" style="width: 25rem;">
+            <img  height="300px" src="./images/nor2.avif" class="card-img-top" alt="...">
+            <div class="content">
+              <h1 style="font-size: 30px; font-weight: 600; color: white;">SHIMLA</h1>
+              <p style="font-size: 30px; font-weight: 700;">Rs: <span style="color: rgb(9, 9, 141)">25,000/person</span></p>
+              <a href="#" style="background-color: rgb(201, 26, 26); color: white; border-radius: 30px; text-decoration: none; padding: 10px 10px;">BOOK NOW</a>
+            </div>
+          </div>
+       </div>
+       <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img height="300px" src="./images/nor33.jpg" class="card-img-top" alt="...">
+          <div class="content">
+            <h1 style="font-size: 30px; font-weight: 600; color: white;">AMRITSAR</h1>
+            <p style="font-size: 30px; font-weight: 700;">Rs: <span style="color: rgb(9, 9, 141)">22,000/person</span></p>
+            <a href="#" style="background-color: rgb(201, 26, 26); color: white; border-radius: 30px; text-decoration: none; padding: 10px 10px;">BOOK NOW</a>
+          </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img height="300px"  src="./images/nor-img4.jpg" class="card-img-top" alt="...">
+          <div class="content">
+            <h1 style="font-size: 30px; font-weight: 600; color: white;">GUJARAT</h1>
+            <p style="font-size: 30px; font-weight: 700;">Rs: <span style="color: rgb(9, 9, 141)">30,000/person</span></p>
+            <a href="#" style="background-color: rgb(201, 26, 26); color: white; border-radius: 30px; text-decoration: none; padding: 10px 10px;">BOOK NOW</a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+<hr>
+    <!-- premium Features section-->
+    <section class="container my-5 mb-5">
+      <h2 class="text-center mb-4">OUR PREMIUM FEATURES</h2>
+      <h3 id="imgdream" class="text-center mb-5"> we will make your dreams come true</h3>
+
+<br>
+      <div class="row">
+        <div class="col-md-3 ">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid" width="130px" height="80px"
+              src="./images/our-img 1.avif"
+            />
+            <h3 class="service-title">FREE BIKE RIDE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid" width="130px" height="80px"
+              src="./images/our-img2.jpeg"
+              alt="taxi ride"
+            />
+            <h3 class="service-title">CAMPFIRE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid"
+              src="./images/our-img3.jpg"width="140px" height="100px"
+              alt="customer support girl"
+            />
+            <h3 class="service-title mb-4">TOUR GUIDE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid" width="140px" height="100px"
+              src="./images/oour-img4.png"
+              alt="customer support girl"
+            />
+            <h3 class="service-title mb-5">24X7 SUPPORT</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+       <hr>
+    <!-- Customer feedback -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <img class="image" width="50px" src="./images/envelopimg.png" alt="">
+        <h2 id="img" class="text-center mb-5">our customer love</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="./images/mj1.jpg"
+                alt="Customer 1"
+              />
+              <br>
+              <img width="80px" src="./images/star img.png" alt="">
+              <p class="testimonial-text">
+                "Once again  thanks for making such a memorable trip.  We felt so comfortable through out the journey. the people with us was also talkative and very comfotable."
+              </p>
+              <h5 class="customer-name">Michael & Jenny</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="./images/ra2.jpg"
+                alt="Customer 2"
+              />
+              <br>
+              <img width="80px" src="./images/star img.png" alt="">
+              <p class="testimonial-text">
+                " A truly satisfying travel experience with lots of memories. they provided good packages at esponsible rates.once again thank you so much"
+              </p>
+              <h5 class="customer-name">Rohith & Amrutha</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="./images/ja3.webp"
+                alt="Customer 3"
+              />
+              <br>
+              <img width="80px" src="./images/star img.png" alt="">
+              <p class="testimonial-text">
+                "This is the second time we have used your services, and both times you provided a good experience. we are satisfied with your services"
+
+              </p>
+              <h5 class="customer-name">James & Anna</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" text-white pt-4">
+      <div class="footer">
+        <div class="row">
+          <div class="col">
+
+            <h1 style="color: orange; padding-top: 30px;">ABOUT US</h1>
+            <h3 style="font-size:large; padding-top: 10px;">Our Company</h3>
+            <h3 style="font-size:large;padding-top: 10px;">Our Management</h3>
+            <h3 style="font-size:large; padding-top: 10px;">Connections</h3>
+            <h3 style="font-size:large;padding-top: 10px;">Annual Reports</h3>
+            <h3 style="font-size:large; padding-top: 10px;">Our Network</h3>
+          </div>
+          <div class="col">
+            <h1 style="color: orange;">SOCIAL MEDIA</h1>
+            <i class="fa-brands fa-facebook fa-2x" style="color: #f9fafb; width: 30px; height: 30px; "></i>
+            <i class="fa-brands fa-instagram fa-2x" style="color: #fafcff; width: 30px; height: 30px;"></i>
+            <i class="fa-brands fa-twitter fa-2x" style="color: #f2f4f7; width: 30px; height: 30px;"></i>
+            <i class="fa-brands fa-whatsapp fa-2x" style="color: #f9fafb; width: 30px; height: 30px;"></i>
+          </div>
+          <div class="col">
+            <img class="footimg" src="./images/footimg.png" alt="">
+            <h2>Explore the World</h2>
+                      </div>
+   </footer>     
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  
+</html>
